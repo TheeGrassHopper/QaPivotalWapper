@@ -23,3 +23,6 @@ class Story < Base
   end
 
 end
+
+story = Story.new
+puts story.response
