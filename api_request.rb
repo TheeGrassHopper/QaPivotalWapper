@@ -8,7 +8,7 @@ module ApiRequest
 	end
 
 	def basic_auth
-		{ username: 'labis_dev@sonichealthcareusa.com', password: 'S0nic123' }
+		{ username: APP["config"]["username"], password: APP["config"]["password"] }
 	end
 
 	def build_url

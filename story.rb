@@ -12,9 +12,9 @@ class Story < Base
 
   def add
   	# get defects from qa_complete
-  	# get_response.each do |story|
-  	# 	@labis.create_story(name: story["name"], story_type: "bug")
-  	# end
+  	get_response.each do |story|
+  		@labis.create_story(name: story["name"], story_type: "bug")
+  	end
   	@labis.create_story(name: defect, story_type: "bug")
   end
 
